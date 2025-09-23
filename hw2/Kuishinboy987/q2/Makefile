@@ -10,7 +10,10 @@ SRC = vector_angle.cpp
 all: $(TARGET)
 
 $(TARGET): $(SRC)
-	$(CXX) $(CXXFLAGS) $(PYBIND11_CFLAGS) $(SRC) -o $(TARGET)
+	$(CXX) $(CXXFLAGS) \
+    -I/usr/include/python3.10 \
+    -I/usr/include/pybind11 \
+    $(SRC) -o $(TARGET)
 
 run: all
 	$(PYTHON) -c "import vector_angle; print('angle:', vector_angle.vector_angle(1,0,0,1))"
