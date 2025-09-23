@@ -22,5 +22,5 @@ double vector_angle(double x1, double y1, double x2, double y2)
 }
 
 PYBIND11_MODULE(_vector, m) {
-    m.def("vector_angle", &vector_angle, "Compute angle between 2D vectors"
+    m.def("vector_angle", &vector_angle, "Compute angle between 2D vectors")
 }
