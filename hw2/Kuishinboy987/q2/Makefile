@@ -1,4 +1,4 @@
-PYTHON = python
+PYTHON = python3
 CXX = g++
 CXXFLAGS = -O3 -Wall -shared -std=c++17 -fPIC
 PYBIND11_CFLAGS = $(shell $(PYTHON) -m pybind11 --includes)
