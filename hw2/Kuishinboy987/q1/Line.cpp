@@ -1,3 +1,4 @@
+#include <cstddef>
 #include "Line.hpp"
 
 Line::Line() = default;
